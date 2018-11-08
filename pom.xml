@@ -12,6 +12,29 @@
 		<version>0.1.0-SNAPSHOT</version>
 	</parent>
 
+	<repositories>
+		<repository>
+			<id>libs-release-mi</id>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-mi/</url>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
+			<snapshots>
+				<enabled>false</enabled>
+			</snapshots>
+		</repository>
+		<repository>
+			<id>libs-snapshot-mi</id>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-snapshot-mi</url>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
+			<snapshots>
+				<enabled>true</enabled>
+			</snapshots>
+		</repository>
+	</repositories>
+
 	<dependencies>
 		<dependency>
 			<groupId>org.apache.logging.log4j</groupId>

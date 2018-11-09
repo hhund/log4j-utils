@@ -9,29 +9,31 @@
 	<parent>
 		<groupId>de.rwh.pom</groupId>
 		<artifactId>rwh-pom</artifactId>
-		<version>0.1.0-SNAPSHOT</version>
+		<version>0.1.0</version>
 	</parent>
 
 	<repositories>
 		<repository>
-			<id>libs-release-mi</id>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-mi/</url>
-			<releases>
-				<enabled>true</enabled>
-			</releases>
+			<id>repo-it-snapshot</id>
+			<name>libs-snapshot-mi</name>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-snapshot-mi-local</url>
 			<snapshots>
-				<enabled>false</enabled>
+				<enabled>true</enabled>
 			</snapshots>
+			<releases>
+				<enabled>false</enabled>
+			</releases>
 		</repository>
 		<repository>
-			<id>libs-snapshot-mi</id>
-			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-snapshot-mi</url>
-			<releases>
-				<enabled>false</enabled>
-			</releases>
+			<id>repo-it-release</id>
+			<name>libs-release-mi</name>
+			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-mi-local</url>
 			<snapshots>
-				<enabled>true</enabled>
+				<enabled>false</enabled>
 			</snapshots>
+			<releases>
+				<enabled>true</enabled>
+			</releases>
 		</repository>
 	</repositories>
 
@@ -45,4 +47,21 @@
 			<artifactId>log4j-core</artifactId>
 		</dependency>
 	</dependencies>
+
+	<build>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
 </project>

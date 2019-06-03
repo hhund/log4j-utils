@@ -13,8 +13,7 @@
 
 	<repositories>
 		<repository>
-			<id>repo-it-release</id>
-			<name>libs-release-mi</name>
+			<id>libs-release-public</id>
 			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-public</url>
 			<snapshots>
 				<enabled>false</enabled>
@@ -27,8 +26,7 @@
 
 	<distributionManagement>
 		<repository>
-			<id>repo-it-release</id>
-			<name>libs-release-mi</name>
+			<id>libs-release-public</id>
 			<url>https://repository.it.hs-heilbronn.de/artifactory/libs-release-public</url>
 		</repository>
 	</distributionManagement>

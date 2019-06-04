@@ -10,8 +10,7 @@ import org.slf4j.spi.SLF4JServiceProvider;
 
 public class Log4jServiceProvider implements SLF4JServiceProvider
 {
-	// to avoid constant folding by the compiler, this field must *not* be final
-	public static String REQUESTED_API_VERSION = "1.8"; // !final
+	public static final String REQUESTED_API_VERSION = "1.8";
 
 	private ILoggerFactory loggerFactory;
 	private IMarkerFactory markerFactory;

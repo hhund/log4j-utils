@@ -11,6 +11,10 @@
 		<version>0.7.0</version>
 	</parent>
 
+	<name>log4j2-utils</name>
+	<description>Utility library for setting up slf4j version ${slf4j.version} with log4j2 version ${log4j.version}. Adding the missing ServiceProvider to work with Java ${compileTarget}.</description>
+	<url>https://github.com/hhund/log4j2-utils</url>
+
 	<licenses>
 		<license>
 			<name>Apache License, Version 2.0</name>
@@ -52,7 +56,7 @@
 
 	<scm>
 		<connection>scm:git:git://github.com/hhund/log4j-utils.git</connection>
-		<developerConnection>scm:git:git@github.com/hhund/log4j-utils.git</developerConnection>
+		<developerConnection>scm:git:git@github.com:hhund/log4j-utils.git</developerConnection>
 		<url>http://github.com/hhund/log4j-utils</url>
 	</scm>
 
@@ -89,6 +93,19 @@
 						<id>attach-javadocs</id>
 						<goals>
 							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-gpg-plugin</artifactId>
+				<executions>
+					<execution>
+						<id>sign-artifacts</id>
+						<phase>verify</phase>
+						<goals>
+							<goal>sign</goal>
 						</goals>
 					</execution>
 				</executions>

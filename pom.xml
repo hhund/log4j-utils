@@ -57,7 +57,7 @@
 	<scm>
 		<connection>scm:git:git://github.com/hhund/log4j-utils.git</connection>
 		<developerConnection>scm:git:git@github.com:hhund/log4j-utils.git</developerConnection>
-		<url>http://github.com/hhund/log4j-utils</url>
+		<url>https://github.com/hhund/log4j-utils</url>
 	</scm>
 
 	<dependencies>

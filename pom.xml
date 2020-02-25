@@ -3,12 +3,12 @@
 	<modelVersion>4.0.0</modelVersion>
 
 	<artifactId>log4j2-utils</artifactId>
-	<version>0.4.0</version>
+	<version>0.5.0</version>
 
 	<parent>
 		<groupId>de.hs-heilbronn.mi</groupId>
 		<artifactId>rwh-pom</artifactId>
-		<version>0.8.0</version>
+		<version>0.9.0</version>
 	</parent>
 
 	<name>log4j2-utils</name>

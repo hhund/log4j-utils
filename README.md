@@ -8,6 +8,6 @@ Utility library for setting up slf4j with log4j2, adding the missing ServiceProv
 <dependency>
     <groupId>de.hs-heilbronn.mi</groupId>
     <artifactId>log4j2-utils</artifactId>
-    <version>0.13.0</version>
+    <version>0.14.0</version>
 </dependency>
 ```
